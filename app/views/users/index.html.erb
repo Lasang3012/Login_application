@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 class="title">LOGIN APP</h1>
+    </div>
+    <div class="col-md-12 form-group">
+      <label for="">Welcome</label>
+      <%= link_to current_user.name, user_path(current_user) %>
+    </div>
+  </div>
+  <div class="row">
+    <h1>List Users</h1>
+  </div>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <th scope="col">ID</th>
+        <th scope="col">User Name</th>
+        <th scope="col">#</th>
+      </thead>
+      <tbody>
+        <%= render partial: "user",collection: @users %>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>

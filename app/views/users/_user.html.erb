@@ -1,0 +1,6 @@
+<tr>
+  <th scope="row"><%= user.id %></th>
+  <td> <%= user.name %></td>
+  <td><%= link_to "Logout", logout_path, method: :delete %></td>
+  <td><%= link_to "List Users", users_path %></td>
+</tr>
